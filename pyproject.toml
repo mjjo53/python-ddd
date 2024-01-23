@@ -41,7 +41,7 @@ build-backend = "poetry.core.masonry.api"
 
 
 [tool.poe.tasks]
-test = { shell = "DATABASE_URL=postgresql://postgres:password@localhost:5433/postgres pytest src" }
+test = { shell = "DATABASE_URL=postgresql://postgres:password@test_db:5433/postgres pytest src" }
 test_domain = "pytest -k domain"
 test_infrastructure = "pytest -k infrastructure"
 test_application = "pytest -k application"
@@ -57,4 +57,3 @@ exclude = 'tmp'
 
 [tool.mypy]
 mypy_path = "src"
-

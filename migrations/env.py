@@ -29,7 +29,7 @@ target_metadata = [ListingMetadata]
 # ... etc.
 section = config.config_ini_section
 config.set_section_option(
-    section, "DATABASE_URL", "postgresql://postgres:password@localhost:5432/postgres"
+    section, "DATABASE_URL", "postgresql://postgres:password@db:5432/postgres"
 )
 
 

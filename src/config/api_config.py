@@ -13,7 +13,7 @@ class ApiConfig(BaseSettings):
     DATABASE_ECHO: bool = Field(env="DATABASE_ECHO", default=True)
     DATABASE_URL: str = Field(
         env="DATABASE_URL",
-        default="postgresql://postgres:password@localhost:5432/postgres",
+        default="postgresql://postgres:password@db:5432/postgres",
     )
     LOGGER_NAME = "api"
 

@@ -18,7 +18,7 @@ container = TopLevelContainer()
 container.config.from_dict(
     dict(
         # DATABASE_URL="sqlite+pysqlite:///:memory:",
-        DATABASE_URL="postgresql://postgres:password@localhost:5432/postgres",
+        DATABASE_URL="postgresql://postgres:password@db:5432/postgres",
         DATABASE_ECHO=False,
         DEBUG=True,
     )
